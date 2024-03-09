@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
+import '../../cv_generator/domain/use_cases/cv_generator_service.dart';
 import '../../cv_generator/presentation/bloc/cv_generator_cubit.dart';
 import '../configuration_data/configuration_data.dart';
 import '../connection/connection_helper.dart';
@@ -25,7 +25,9 @@ class ServiceLocator {
 
   void setupDataServices() {}
 
-  void setupDomainServices() {}
+  void setupDomainServices() {
+    getIt.registerSingleton<CvGeneratorService>(CvGeneratorServiceImplMock());
+  }
 
   void setupConnectionHelper() async{
     var config = getConfigurationData();
@@ -56,5 +58,9 @@ class ServiceLocator {
 
   CvGeneratorCubit getCvGeneratorCubit() {
     return getIt.get<CvGeneratorCubit>();
+  }
+  
+  CvGeneratorService getCvGeneratorDomainService() {
+    return getIt.get<CvGeneratorService>();
   }
 }

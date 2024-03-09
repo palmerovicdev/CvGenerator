@@ -42,6 +42,7 @@
     },
     {
       "title": "Skills",
+      "type": "wrap",
       "subsections": [
         {
           "description": "Your skill"

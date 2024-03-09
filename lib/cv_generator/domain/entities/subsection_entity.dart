@@ -10,4 +10,13 @@ class SubsectionEntity {
     this.datePeriod,
     this.description,
   });
+
+  factory SubsectionEntity.fromJson(Map<String, dynamic> json) {
+    return SubsectionEntity(
+      title: json['title'] ?? '',
+      subtitle: json['subtitle'] ?? '',
+      datePeriod: json['datePeriod'] ?? '',
+      description: json['description'] ?? '',
+    );
+  }
 }

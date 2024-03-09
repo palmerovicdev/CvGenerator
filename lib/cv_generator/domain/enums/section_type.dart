@@ -1,0 +1,3 @@
+enum SectionType{
+  list, wrap;
+}
