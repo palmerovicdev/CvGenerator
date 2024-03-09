@@ -1,0 +1,6 @@
+{
+  "connection": {
+    "base_url": "https://localhost:30303/",
+    "content_type": "application/json"
+  }
+}

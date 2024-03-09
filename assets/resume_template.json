@@ -1,0 +1,77 @@
+{
+  "name": "Your Name",
+  "role": "Your Role",
+  "location": "Your Location",
+  "sections": [
+    {
+      "title": "About Me",
+      "subsections": [
+        {
+          "description": "Your Description"
+        }
+      ]
+    },
+    {
+      "title": "Experience",
+      "subsections": [
+        {
+          "title": "Your Job Title",
+          "subtitle": "Your Company",
+          "date_period": "Your working period",
+          "description": "Your Description"
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "subsections": [
+        {
+          "subtitle": "Your School",
+          "date_period": "Your education period",
+          "description": "Your description"
+        }
+      ]
+    },
+    {
+      "title": "Certificates",
+      "subsections": [
+        {
+          "description": "Your certificate"
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "subsections": [
+        {
+          "description": "Your skill"
+        }
+      ]
+    },
+    {
+      "title": "Languages",
+      "subsections": [
+        {
+          "description": "Your language"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "subsections": [
+        {
+          "title": "Your Project",
+          "description": "Your Description"
+        }
+      ]
+    },
+    {
+      "title": "Contact",
+      "subsections": [
+        {
+          "description": "Your Email"
+        }
+      ]
+    }
+  ]
+}
