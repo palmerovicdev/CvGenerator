@@ -23,4 +23,9 @@ class SectionEntity {
       subsections: subsectionsList ?? [],
     );
   }
+
+  @override
+  String toString() {
+    return '{title: $title, type: $type, subsections: $subsections}';
+  }
 }

@@ -19,7 +19,6 @@ class CvGeneratorCubit extends Cubit<CvGeneratorState> {
   void fetchResume() async {
     emit(CvGeneratorLoading());
     try {
-      serviceLocator.getCvGeneratorDomainService().fetchResume();
       _resume = await serviceLocator.getCvGeneratorDomainService().fetchResume();
       debugPrint(_resume.toString());
       emit(CvGeneratorLoaded());

@@ -19,4 +19,9 @@ class SubsectionEntity {
       description: json['description'] ?? '',
     );
   }
+
+  @override
+  String toString() {
+    return '{title: $title, subtitle: $subtitle, datePeriod: $datePeriod, description: $description}';
+  }
 }

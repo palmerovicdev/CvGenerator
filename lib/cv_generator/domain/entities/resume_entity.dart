@@ -28,6 +28,6 @@ class ResumeEntity {
 
   @override
   String toString() {
-    return 'ResumeEntity(name: $name, role: $role, location: $location, sections: $sections)';
+    return '{name: $name, role: $role, location: $location, sections: $sections}';
   }
 }
