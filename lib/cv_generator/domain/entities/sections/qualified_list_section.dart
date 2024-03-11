@@ -13,6 +13,12 @@ class QualifiedListSection extends Section<QualifiedListSubSection> {
       subSections: (json['subsections'] as List).map((subsection) => QualifiedListSubSection.fromJson(subsection)).toList(),
     );
   }
+
+  //toString
+  @override
+  String toString() {
+    return '{type: $type, name: $name, screenLocation: $screenLocation, subSections: $subSections}';
+  }
 }
 
 class QualifiedListSubSection {
@@ -26,5 +32,11 @@ class QualifiedListSubSection {
 
   factory QualifiedListSubSection.fromJson(Map<String, dynamic> json) {
     return QualifiedListSubSection(text: json['text'], level: json['level']);
+  }
+
+  //toString
+  @override
+  String toString() {
+    return '{text: $text, level: $level}';
   }
 }

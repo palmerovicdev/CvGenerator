@@ -17,6 +17,12 @@ class PersonalSection extends Section<PersonalSubSection>{
       subSections: (json['subsections'] as List).map((subsection) => PersonalSubSection.fromJson(subsection)).toList(),
     );
   }
+
+  //toString
+  @override
+  String toString() {
+    return '{type: $type, name: $name, screenLocation: $screenLocation, subSections: $subSections}';
+  }
 }
 
 class PersonalSubSection {
@@ -40,6 +46,12 @@ class PersonalSubSection {
         contacts: (json['contacts'] as List).map((contact) => PersonalContact.fromJson(contact)).toList(),
     );
   }
+
+  //toString
+  @override
+  String toString() {
+    return '{name: $name, lastName: $lastName, title: $title, contacts: $contacts}';
+  }
 }
 
 class PersonalContact {
@@ -53,5 +65,11 @@ class PersonalContact {
 
   factory PersonalContact.fromJson(Map<String, dynamic> json){
     return PersonalContact(type: json['type'], value: json['value'],);
+  }
+
+  //toString
+  @override
+  String toString() {
+    return '{type: $type, value: $value}';
   }
 }

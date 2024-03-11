@@ -14,6 +14,11 @@ class TextSection extends Section<TextSubSection> {
     );
   }
 
+  //toString
+  @override
+  String toString() {
+    return '{type: $type, name: $name, screenLocation: $screenLocation, subSections: $subSections}';
+  }
 }
 
 class TextSubSection {
@@ -23,5 +28,11 @@ class TextSubSection {
 
   factory TextSubSection.fromJson(Map<String, dynamic> json){
     return TextSubSection(text: json['text']);
+  }
+
+  //toString
+  @override
+  String toString() {
+    return '{text: $text}';
   }
 }

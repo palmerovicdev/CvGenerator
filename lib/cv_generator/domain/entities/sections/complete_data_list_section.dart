@@ -13,6 +13,12 @@ class CompleteDataListSection extends Section<CompleteDataListSubSection> {
       subSections: (json['subsections'] as List).map((subsection) => CompleteDataListSubSection.fromJson(subsection)).toList(),
     );
   }
+
+  //toString
+  @override
+  String toString() {
+    return '{type: $type, name: $name, screenLocation: $screenLocation, subSections: $subSections}';
+  }
 }
 
 class CompleteDataListSubSection {
@@ -36,13 +42,19 @@ class CompleteDataListSubSection {
 
   factory CompleteDataListSubSection.fromJson(Map<String, dynamic> json) {
     return CompleteDataListSubSection(
-      title: json['type'],
-      headline: json['headline'],
-      location: json['location'],
-      startDate: json['startDate'],
-      endDate: json['endDate'],
-      description: json['description'],
-      url: json['url'],
+      title: json['title'] ?? '',
+      headline: json['headline'] ?? '',
+      location: json['location'] ?? '',
+      startDate: json['startDate'] ?? '',
+      endDate: json['endDate'] ?? '',
+      description: json['description'] ?? '',
+      url: json['url'] ?? '',
     );
+  }
+
+  //toString
+  @override
+  String toString() {
+    return '{title: $title, headline: $headline, location: $location, startDate: $startDate, endDate: $endDate, description: $description, url: $url}';
   }
 }

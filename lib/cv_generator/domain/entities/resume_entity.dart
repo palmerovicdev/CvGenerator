@@ -28,4 +28,10 @@ class ResumeEntity {
       }
     }).toList());
   }
+
+  // toString
+  @override
+  String toString() {
+    return '{sections: $sections}';
+  }
 }

@@ -13,6 +13,12 @@ class SimpleDataListSection extends Section<SimpleDataListSubSection> {
       subSections: (json['subsections'] as List).map((subsection) => SimpleDataListSubSection.fromJson(subsection)).toList(),
     );
   }
+
+  //toString
+  @override
+  String toString() {
+    return '{type: $type, name: $name, screenLocation: $screenLocation, subSections: $subSections}';
+  }
 }
 
 class SimpleDataListSubSection {
@@ -38,5 +44,11 @@ class SimpleDataListSubSection {
       description: json['description'],
       url: json['url'],
     );
+  }
+
+  //toString
+  @override
+  String toString() {
+    return '{title: $title, startDate: $startDate, endDate: $endDate, description: $description, url: $url}';
   }
 }

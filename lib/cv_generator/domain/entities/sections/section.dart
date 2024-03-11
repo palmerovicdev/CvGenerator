@@ -12,4 +12,10 @@ class Section<T> {
     required this.screenLocation,
     required this.subSections,
   });
+
+  //toString
+  @override
+  String toString() {
+    return '{type: $type, name: $name, screenLocation: $screenLocation, subSections: $subSections}';
+  }
 }
