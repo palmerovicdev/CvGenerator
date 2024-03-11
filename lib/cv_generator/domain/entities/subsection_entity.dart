@@ -15,7 +15,7 @@ class SubsectionEntity {
     return SubsectionEntity(
       title: json['title'] ?? '',
       subtitle: json['subtitle'] ?? '',
-      datePeriod: json['datePeriod'] ?? '',
+      datePeriod: json['date_period'] ?? '',
       description: json['description'] ?? '',
     );
   }

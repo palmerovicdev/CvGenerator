@@ -23,7 +23,8 @@ class CvGeneratorCubit extends Cubit<CvGeneratorState> {
       debugPrint(_resume.toString());
       emit(CvGeneratorLoaded());
     } catch (e) {
-      emit(const CvGeneratorError('Failed to fetch resume'));
+      debugPrintStack(label: e.toString());
+      emit(CvGeneratorError('Failed to fetch resume. Message: ${e.toString()}'));
     }
   }
 }

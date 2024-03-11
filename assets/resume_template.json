@@ -1,13 +1,14 @@
 {
-  "name": "Your Name",
-  "role": "Your Role",
-  "location": "Your Location",
+  "name": "Victor Manuel Palmero Valdes",
+  "role": "Full Stack Developer",
+  "location": "Santa Clara, Cuba",
   "sections": [
     {
       "title": "About Me",
+      "type": "text",
       "subsections": [
         {
-          "description": "Your Description"
+          "description": "+2 años de experiencia como desarrollador Web, Android e IOS. Durante mi carrera como desarrollador he obtenido habilidades de organización y optimización de código, resolución de problemas, aprendizaje rápido de nuevas tecnologías y trabajo en equipo. Me he desempeñado en diferentes entornos: desde el desarrollo de aplicaciones backend con Spring Boot, aplicaciones Android e IOS con Flutter, realización de sprints o tareas en Javascript y PHP, hasta desarrollo de aplicaciones desktop con Kotlin, Java, y plugins para las herramientas de desarrollo de Jetbrains."
         }
       ]
     },
@@ -15,10 +16,16 @@
       "title": "Experience",
       "subsections": [
         {
-          "title": "Your Job Title",
-          "subtitle": "Your Company",
-          "date_period": "Your working period",
-          "description": "Your Description"
+          "title": "CIGET",
+          "subtitle": "Full Stack Developer",
+          "date_period": "09/2022 - 06/2023",
+          "description": "Fuí contratado por el CIGET de Camagüey para desarrollar un sistema de implementación de guías de autocontrol internollamado AUDSCI, que será utilizado en empresas cubanas. Durante mi tiempo trabajando en el proyecto estuve involucrado envarias áreas clave como el desarrollo backend y frontend, diseño de interfaz, diseño de bases de datos con PostgreSql y testing"
+        },
+        {
+          "title": "UnDosTres",
+          "subtitle": "Full Stack Developer",
+          "date_period": "10/2023 - Actual",
+          "description": "Fuí contratado por la empresa mexicana UnDosTres para ocupar un puesto de Full Stack en el desarrollo de una aplicaciónhomónima en modalidad full time. Participe en áreas clave utilizando tecnologías como: SpringBoot, Flutter, Kotlin, Objective-C,PHP, Javascript, MySql, entre otras. Además hice amplio uso de herramientas como: Jira, GitHub, Git, Datagrid, IntelliJ IDEA,Maven, Gradle, Firebase, Clevertap, entre otras.\nLinks: (web) https://undostres.com.mx/ - (android) https://play.google.com/store/apps/details?id=www.undostres.com.mx(ios) https://apps.apple.com/mx/app/undostres-recargas-y-pagos/id1375793322"
         }
       ]
     },
@@ -26,9 +33,9 @@
       "title": "Education",
       "subsections": [
         {
-          "subtitle": "Your School",
-          "date_period": "Your education period",
-          "description": "Your description"
+          "subtitle": "Universidad Marta Abreu de Las Villas",
+          "date_period": "2022 - Actual",
+          "description": "Lic. Ciencias de la Computación - https://www.uclv.edu.cu/"
         }
       ]
     },
@@ -36,7 +43,7 @@
       "title": "Certificates",
       "subsections": [
         {
-          "description": "Your certificate"
+          "description": "English B2 level certificate"
         }
       ]
     },
@@ -45,7 +52,37 @@
       "type": "wrap",
       "subsections": [
         {
-          "description": "Your skill"
+          "description": "Spring"
+        },
+        {
+          "description": "Flutter"
+        },
+        {
+          "description": "Java"
+        },
+        {
+          "description": "Dart"
+        },
+        {
+          "description": "Javascript"
+        },{
+          "description": "Python"
+        },{
+          "description": "MySql"
+        },{
+          "description": "PostgreSql"
+        },{
+          "description": "Git/GitHub"
+        },{
+          "description": "Architecture Patterns"
+        },{
+          "description": "Design Patterns"
+        },{
+          "description": "Clean Code"
+        },{
+          "description": "Refactoring"
+        },{
+          "description": "Profiling"
         }
       ]
     },
@@ -53,16 +90,10 @@
       "title": "Languages",
       "subsections": [
         {
-          "description": "Your language"
-        }
-      ]
-    },
-    {
-      "title": "Projects",
-      "subsections": [
+          "description": "English b2 Level"
+        },
         {
-          "title": "Your Project",
-          "description": "Your Description"
+          "description": "Spanish native"
         }
       ]
     },
@@ -70,7 +101,13 @@
       "title": "Contact",
       "subsections": [
         {
-          "description": "Your Email"
+          "description": "github.com/palmerovicdev"
+        },
+        {
+          "description": "palmerodev@gmail.com"
+        },
+        {
+          "description": "https://t.me/palmerodev"
         }
       ]
     }

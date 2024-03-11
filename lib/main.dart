@@ -39,7 +39,7 @@ class _CvGeneratorApp extends StatelessWidget {
       title: 'Cv-Generator',
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData.dark(),
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       theme: ThemeData.light(),
       routerConfig: router,
     );

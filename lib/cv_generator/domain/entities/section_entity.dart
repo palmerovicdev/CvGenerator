@@ -14,12 +14,11 @@ class SectionEntity {
 
   factory SectionEntity.fromJson(Map<String, dynamic> json) {
     var subsections = json['subsections'] ?? [];
-    List<SubsectionEntity>? subsectionsList = subsections.isNotEmpty
-        ? List<SubsectionEntity>.from(subsections.map((x) => SubsectionEntity.fromJson(x)))
-        : null;
+    List<SubsectionEntity>? subsectionsList =
+        subsections.isNotEmpty ? List<SubsectionEntity>.from(subsections.map((subsection) => SubsectionEntity.fromJson(subsection))) : null;
     return SectionEntity(
       title: json['title'] ?? '',
-      type: json['type'] == 'wrap' ? SectionType.wrap : SectionType.list,
+      type: SectionType.fromString(json['type'] ?? 'list'),
       subsections: subsectionsList ?? [],
     );
   }
