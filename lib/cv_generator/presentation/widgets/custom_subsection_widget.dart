@@ -18,16 +18,10 @@ class CustomSubsectionWidget extends StatelessWidget {
         ? Row(
           children: [
             Text('• ', style: TextThemes.subsectionTitle.style),
-            Expanded(child: Padding(
-              padding: const EdgeInsets.only(right: 20.0),
-              child: _buildSubsection(context),
-            )),
+            Expanded(child: _buildSubsection(context)),
           ],
         )
-        : Padding(
-          padding: const EdgeInsets.only(right: 20.0),
-          child: _buildSubsection(context),
-        );
+        : _buildSubsection(context);
   }
 
   Widget _buildSubsection(BuildContext context) {

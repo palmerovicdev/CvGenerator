@@ -82,15 +82,12 @@ class _CvGeneratorPage extends StatelessWidget {
                             type: section.type,
                             children: [
                               for (var subsection in section.subsections!)
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 10.0),
-                                  child: CustomSubsectionWidget(
-                                    title: subsection.title,
-                                    subtitle: subsection.subtitle,
-                                    datePeriod: subsection.datePeriod,
-                                    description: subsection.description,
-                                    sectionType: section.type,
-                                  ),
+                                CustomSubsectionWidget(
+                                  title: subsection.title,
+                                  subtitle: subsection.subtitle,
+                                  datePeriod: subsection.datePeriod,
+                                  description: subsection.description,
+                                  sectionType: section.type,
                                 ),
                             ],
                           ),

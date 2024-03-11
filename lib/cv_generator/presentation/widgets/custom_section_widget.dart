@@ -25,16 +25,40 @@ class CustomSectionWidget extends StatelessWidget {
               )
             : const SizedBox(),
         if (children != null && type == SectionType.list)
-          Column(
-            children: children!,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Column(
+              children: children!,
+            ),
           ),
         if (children != null && type == SectionType.text)
-          Column(
-            children: children!,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Column(
+              children: children!,
+            ),
           ),
         if (children != null && type == SectionType.wrap)
-          Wrap(
-            children: children!,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Wrap(
+              children: [
+                for (var child in children!)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Theme.of(context).colorScheme.onSurface,
+                          width: 1,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: child,
+                    ),
+                  ),
+              ],
+            ),
           ),
       ],
     );
