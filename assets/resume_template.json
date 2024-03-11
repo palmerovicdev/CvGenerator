@@ -1,81 +1,190 @@
 {
-  "personal": {
-    "name": "John",
-    "lastname": "Doe",
-    "title": "Software Engineer",
-    "email": "",
-    "phone": "",
-    "address": "",
-    "website": "",
-    "linkedin": "",
-    "github": "",
-    "telegram": ""
-  },
-  "about": "I'm a software engineer with a passion for building things. I have a strong background in web development and I'm always looking for new challenges.",
-  "experience": [
+  "sections": [
     {
-      "position": "Software Engineer",
-      "company": "Company A",
-      "location": "City A",
-      "startDate": "2019-01-01",
-      "endDate": "2020-01-01",
-      "description": "I worked on a team of 5 developers to build a new web application from scratch. I was responsible for the front-end development and I also contributed to the back-end. We used React for the front-end and Node.js for the back-end."
-    },
-    {
-      "position": "Software Engineer",
-      "company": "Company B",
-      "location": "City B",
-      "startDate": "2017-01-01",
-      "endDate": "2019-01-01",
-      "description": "I worked on a team of 10 developers to maintain and improve an existing web application. I was responsible for the front-end development and I also contributed to the back-end. We used Angular for the front-end and Java for the back-end."
-    }
-  ],
-  "skills": [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "Angular",
-    "Java",
-    "HTML",
-    "CSS",
-    "Git",
-    "SQL"
-  ],
-    "education": [
+      "type": "personal",
+      "name": "Personal",
+      "screen-location": "top",
+      "subsections": [
         {
-        "education": "Computer Science",
-        "school": "University A",
-        "location": "City A",
-        "startDate": "2013-01-01",
-        "endDate": "2017-01-01",
-        "description": "I studied computer science and graduated with a bachelor's degree."
+          "name": "Victor",
+          "lastname": "Palmero",
+          "title": "Full Stack Developer",
+          "contacts": [
+            {
+              "type": "email",
+              "value": "palmerodev@gmail.com"
+            },
+            {
+              "type": "phone",
+              "value": "+535 276 47 68"
+            },
+            {
+              "type": "github",
+              "value": "palmerovicdev"
+            },
+            {
+              "type": "telegram",
+              "value": "palmerodev"
+            },
+            {
+              "type": "linkedin",
+              "value": "palmerovicdev"
+            },
+            {
+              "type": "location",
+              "value": "Santa Clara, Cuba"
+            }
+          ]
         }
-    ],
-  "languaje": [
-    {
-      "languaje": "English",
-      "level": "Fluent"
+      ]
     },
     {
-      "languaje": "Spanish",
-      "level": "Native"
-    }
-  ],
-  "courses": [
+      "type": "text",
+      "name": "About Me",
+      "screen-location": "left",
+      "subsections": [
+        {
+          "text": "+2 años de experiencia como desarrollador Web, Android e IOS. Durante mi carrera como desarrollador he obtenido habilidades de organización y optimización de código, resolución de problemas, aprendizaje rápido de nuevas tecnologías y trabajo en equipo. Me he desempeñado en diferentes entornos: desde el desarrollo de aplicaciones backend con Spring Boot, aplicaciones Android e IOS con Flutter, realización de sprints o tareas en Javascript y PHP, hasta desarrollo de aplicaciones desktop con Kotlin, Java, y plugins para las herramientas de desarrollo de Jetbrains."
+        }
+      ]
+    },
     {
-      "course": "React for Beginners",
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "description": "I took an online course to learn React and improve my front-end development skills."
-    }
-  ],
-  "certificates": [
+      "type": "completeDataList",
+      "name": "Experience",
+      "screen-location": "left",
+      "subsections": [
+        {
+          "title": "CIGET",
+          "headline": "2022 - Actual",
+          "location": "Santa Clara, Cuba",
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-31",
+          "description": "Desarrollador Full Stack",
+          "url": "https://www.ciget.vcl.sld.cu/"
+        }
+      ]
+    },
     {
-      "certificate": "React Certification",
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "description": "I took an online exam and received a certificate for my React skills."
+      "type": "qualifiedList",
+      "name": "Skills",
+      "screen-location": "right",
+      "subsections": [
+        {
+          "text": "Java",
+          "level": "80"
+        },
+        {
+          "text": "Spring",
+          "level": "80"
+        },
+        {
+          "text": "Flutter",
+          "level": "80"
+        },
+        {
+          "text": "Dart",
+          "level": "80"
+        },
+        {
+          "text": "Javascript",
+          "level": "80"
+        },
+        {
+          "text": "Python",
+          "level": "80"
+        },
+        {
+          "text": "MySql",
+          "level": "80"
+        },
+        {
+          "text": "PostgreSql",
+          "level": "80"
+        },
+        {
+          "text": "Git/GitHub",
+          "level": "80"
+        },
+        {
+          "text": "Architecture Patterns",
+          "level": "80"
+        },
+        {
+          "text": "Design Patterns",
+          "level": "80"
+        },
+        {
+          "text": "Clean Code",
+          "level": "80"
+        },
+        {
+          "text": "Refactoring",
+          "level": "80"
+        },
+        {
+          "text": "Profiling",
+          "level": "80"
+        }
+      ]
+    },
+    {
+      "type": "qualifiedList",
+      "name": "Language",
+      "screen-location": "right",
+      "subsections": [
+        {
+          "text": "English",
+          "level": "80"
+        },
+        {
+          "text": "Spanish",
+          "level": "100"
+        }
+      ]
+    },
+    {
+      "type": "completeDataList",
+      "name": "Education",
+      "screen-location": "left",
+      "subsections": [
+        {
+          "title": "Universidad Central \"Marta Abreu\" de Las Villas",
+          "headline": "2017 - 2022",
+          "location": "Santa Clara, Cuba",
+          "startDate": "2017-09-01",
+          "endDate": "2022-07-01",
+          "description": "Ingeniería en Ciencias Informáticas",
+          "url": "https://www.uclv.cu/"
+        }
+      ]
+    },
+    {
+      "type": "simpleDataList",
+      "name": "Curses",
+      "screen-location": "left",
+      "subsections": [
+        {
+          "title": "Sistema de Gestión de la Calidad",
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-31",
+          "description": "Sistema de Gestión de la Calidad para la Universidad Central \"Marta Abreu\" de Las Villas",
+          "url": "https://www.uclv.cu/"
+        }
+      ]
+    },
+    {
+      "type": "simpleDataList",
+      "name": "Certificates",
+      "screen-location": "left",
+      "subsections": [
+        {
+          "title": "English B2 level",
+          "startDate": "2022-01-01",
+          "endDate": "2022-12-31",
+          "description": "B2 level of English for the Universidad Central \"Marta Abreu\" de Las Villas",
+          "url": ""
+        }
+      ]
     }
-  ],
-  "footer": "This resume was generated using a JSON file and a Node.js script. You can find the source code on GitHub."
+  ]
 }

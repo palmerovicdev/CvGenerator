@@ -14,14 +14,14 @@ class CvCreatorPage extends StatelessWidget {
         if (state is CvCreatorInitial) {
           serviceLocator.getCvCreatorCubit().load();
         }
-        if (state is CvCreatorLoading) {
+        else if (state is CvCreatorLoading) {
           return const Scaffold(
             body: Center(
               child: CircularProgressIndicator(),
             ),
           );
         }
-        if (state is CvCreatorError) {
+        else if (state is CvCreatorError) {
           return Scaffold(
             appBar: AppBar(
               title: const Text('Create your CV'),
@@ -46,11 +46,9 @@ class _CvCreatorPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<CvCreatorCubit, CvCreatorState>(
       builder: (context, state) {
-        final loadedState = state as CvCreatorLoaded;
-
         return Scaffold(
           appBar: AppBar(
-            title: Text(loadedState.appBarTitle),
+            title: Text('cacaca'),
           ),
         );
       },
