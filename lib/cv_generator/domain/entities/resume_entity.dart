@@ -1,33 +1,31 @@
-import 'package:cv_generator/cv_generator/domain/entities/section_entity.dart';
+import 'package:cv_generator/cv_generator/domain/entities/sections/complete_data_list_section.dart';
+import 'package:cv_generator/cv_generator/domain/entities/sections/personal_section.dart';
+import 'package:cv_generator/cv_generator/domain/entities/sections/qualified_list_section.dart';
+import 'package:cv_generator/cv_generator/domain/entities/sections/section.dart';
+import 'package:cv_generator/cv_generator/domain/entities/sections/simple_data_list_section.dart';
+import 'package:cv_generator/cv_generator/domain/entities/sections/text_section.dart';
+import 'package:cv_generator/cv_generator/domain/enums/section_enums.dart';
 
 class ResumeEntity {
-  final String name;
-  final String role;
-  final String? location;
-  final List<SectionEntity>? sections;
+  List<Section> sections;
 
-  ResumeEntity({
-    required this.name,
-    required this.role,
-    this.location,
-    this.sections,
-  });
+  ResumeEntity({required this.sections});
 
   factory ResumeEntity.fromJson(Map<String, dynamic> json) {
-    var sections = json['sections'] ?? [];
-    List<SectionEntity> sectionsList = sections.isNotEmpty
-        ? List<SectionEntity>.from(sections.map((x) => SectionEntity.fromJson(x)))
-        : [];
     return ResumeEntity(
-      name: json['name'] ?? '',
-      role: json['role'] ?? '',
-      location: json['location'] ?? '',
-      sections: sectionsList,
-    );
-  }
-
-  @override
-  String toString() {
-    return '{name: $name, role: $role, location: $location, sections: $sections}';
+        sections: (json['sections'] as List).map((section) {
+      switch (SectionType.fromString(section['type'])) {
+        case SectionType.personal:
+          return PersonalSection.fromJson(section);
+        case SectionType.text:
+          return TextSection.fromJson(section);
+        case SectionType.qualifiedList:
+          return QualifiedListSection.fromJson(section);
+        case SectionType.simpleDataList:
+          return SimpleDataListSection.fromJson(section);
+        case SectionType.completeDataList:
+          return CompleteDataListSection.fromJson(section);
+      }
+    }).toList());
   }
 }

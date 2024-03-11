@@ -1,115 +1,81 @@
 {
-  "name": "Victor Manuel Palmero Valdes",
-  "role": "Full Stack Developer",
-  "location": "Santa Clara, Cuba",
-  "sections": [
+  "personal": {
+    "name": "John",
+    "lastname": "Doe",
+    "title": "Software Engineer",
+    "email": "",
+    "phone": "",
+    "address": "",
+    "website": "",
+    "linkedin": "",
+    "github": "",
+    "telegram": ""
+  },
+  "about": "I'm a software engineer with a passion for building things. I have a strong background in web development and I'm always looking for new challenges.",
+  "experience": [
     {
-      "title": "About Me",
-      "type": "text",
-      "subsections": [
-        {
-          "description": "+2 años de experiencia como desarrollador Web, Android e IOS. Durante mi carrera como desarrollador he obtenido habilidades de organización y optimización de código, resolución de problemas, aprendizaje rápido de nuevas tecnologías y trabajo en equipo. Me he desempeñado en diferentes entornos: desde el desarrollo de aplicaciones backend con Spring Boot, aplicaciones Android e IOS con Flutter, realización de sprints o tareas en Javascript y PHP, hasta desarrollo de aplicaciones desktop con Kotlin, Java, y plugins para las herramientas de desarrollo de Jetbrains."
-        }
-      ]
+      "position": "Software Engineer",
+      "company": "Company A",
+      "location": "City A",
+      "startDate": "2019-01-01",
+      "endDate": "2020-01-01",
+      "description": "I worked on a team of 5 developers to build a new web application from scratch. I was responsible for the front-end development and I also contributed to the back-end. We used React for the front-end and Node.js for the back-end."
     },
     {
-      "title": "Experience",
-      "subsections": [
-        {
-          "title": "CIGET",
-          "subtitle": "Full Stack Developer",
-          "date_period": "09/2022 - 06/2023",
-          "description": "Fuí contratado por el CIGET de Camagüey para desarrollar un sistema de implementación de guías de autocontrol internollamado AUDSCI, que será utilizado en empresas cubanas. Durante mi tiempo trabajando en el proyecto estuve involucrado envarias áreas clave como el desarrollo backend y frontend, diseño de interfaz, diseño de bases de datos con PostgreSql y testing"
-        },
-        {
-          "title": "UnDosTres",
-          "subtitle": "Full Stack Developer",
-          "date_period": "10/2023 - Actual",
-          "description": "Fuí contratado por la empresa mexicana UnDosTres para ocupar un puesto de Full Stack en el desarrollo de una aplicaciónhomónima en modalidad full time. Participe en áreas clave utilizando tecnologías como: SpringBoot, Flutter, Kotlin, Objective-C,PHP, Javascript, MySql, entre otras. Además hice amplio uso de herramientas como: Jira, GitHub, Git, Datagrid, IntelliJ IDEA,Maven, Gradle, Firebase, Clevertap, entre otras.\nLinks: (web) https://undostres.com.mx/ - (android) https://play.google.com/store/apps/details?id=www.undostres.com.mx(ios) https://apps.apple.com/mx/app/undostres-recargas-y-pagos/id1375793322"
-        }
-      ]
-    },
-    {
-      "title": "Education",
-      "subsections": [
-        {
-          "subtitle": "Universidad Marta Abreu de Las Villas",
-          "date_period": "2022 - Actual",
-          "description": "Lic. Ciencias de la Computación - https://www.uclv.edu.cu/"
-        }
-      ]
-    },
-    {
-      "title": "Certificates",
-      "subsections": [
-        {
-          "description": "English B2 level certificate"
-        }
-      ]
-    },
-    {
-      "title": "Skills",
-      "type": "wrap",
-      "subsections": [
-        {
-          "description": "Spring"
-        },
-        {
-          "description": "Flutter"
-        },
-        {
-          "description": "Java"
-        },
-        {
-          "description": "Dart"
-        },
-        {
-          "description": "Javascript"
-        },{
-          "description": "Python"
-        },{
-          "description": "MySql"
-        },{
-          "description": "PostgreSql"
-        },{
-          "description": "Git/GitHub"
-        },{
-          "description": "Architecture Patterns"
-        },{
-          "description": "Design Patterns"
-        },{
-          "description": "Clean Code"
-        },{
-          "description": "Refactoring"
-        },{
-          "description": "Profiling"
-        }
-      ]
-    },
-    {
-      "title": "Languages",
-      "subsections": [
-        {
-          "description": "English b2 Level"
-        },
-        {
-          "description": "Spanish native"
-        }
-      ]
-    },
-    {
-      "title": "Contact",
-      "subsections": [
-        {
-          "description": "github.com/palmerovicdev"
-        },
-        {
-          "description": "palmerodev@gmail.com"
-        },
-        {
-          "description": "https://t.me/palmerodev"
-        }
-      ]
+      "position": "Software Engineer",
+      "company": "Company B",
+      "location": "City B",
+      "startDate": "2017-01-01",
+      "endDate": "2019-01-01",
+      "description": "I worked on a team of 10 developers to maintain and improve an existing web application. I was responsible for the front-end development and I also contributed to the back-end. We used Angular for the front-end and Java for the back-end."
     }
-  ]
+  ],
+  "skills": [
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Angular",
+    "Java",
+    "HTML",
+    "CSS",
+    "Git",
+    "SQL"
+  ],
+    "education": [
+        {
+        "education": "Computer Science",
+        "school": "University A",
+        "location": "City A",
+        "startDate": "2013-01-01",
+        "endDate": "2017-01-01",
+        "description": "I studied computer science and graduated with a bachelor's degree."
+        }
+    ],
+  "languaje": [
+    {
+      "languaje": "English",
+      "level": "Fluent"
+    },
+    {
+      "languaje": "Spanish",
+      "level": "Native"
+    }
+  ],
+  "courses": [
+    {
+      "course": "React for Beginners",
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "description": "I took an online course to learn React and improve my front-end development skills."
+    }
+  ],
+  "certificates": [
+    {
+      "certificate": "React Certification",
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "description": "I took an online exam and received a certificate for my React skills."
+    }
+  ],
+  "footer": "This resume was generated using a JSON file and a Node.js script. You can find the source code on GitHub."
 }

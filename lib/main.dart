@@ -21,7 +21,7 @@ class CvGeneratorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (context) => serviceLocator.getCvGeneratorCubit()),
+        BlocProvider(create: (context) => serviceLocator.getCvCreatorCubit())
       ],
       child: const _CvGeneratorApp(),
     );

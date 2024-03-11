@@ -1,7 +1,7 @@
+import 'package:cv_generator/cv_generator/presentation/bloc/creator/cv_creator_cubit.dart';
 import 'package:get_it/get_it.dart';
 
-import '../../cv_generator/domain/use_cases/cv_generator_service.dart';
-import '../../cv_generator/presentation/bloc/cv_generator_cubit.dart';
+import '../../cv_generator/domain/use_cases/cv_creator_service.dart';
 import '../configuration_data/configuration_data.dart';
 import '../connection/connection_helper.dart';
 
@@ -26,7 +26,7 @@ class ServiceLocator {
   void setupDataServices() {}
 
   void setupDomainServices() {
-    getIt.registerSingleton<CvGeneratorService>(CvGeneratorServiceImplMock());
+    getIt.registerSingleton<CvCreatorService>(CvGeneratorServiceImplMock());
   }
 
   void setupConnectionHelper() async{
@@ -43,7 +43,7 @@ class ServiceLocator {
   }
 
   void setupCubits() {
-    getIt.registerSingleton<CvGeneratorCubit>(CvGeneratorCubit());
+    getIt.registerSingleton<CvCreatorCubit>(CvCreatorCubit());
   }
 
 
@@ -56,11 +56,11 @@ class ServiceLocator {
     return getIt.get<ConnectionHelper>();
   }
 
-  CvGeneratorCubit getCvGeneratorCubit() {
-    return getIt.get<CvGeneratorCubit>();
+  CvCreatorCubit getCvCreatorCubit() {
+    return getIt.get<CvCreatorCubit>();
   }
   
-  CvGeneratorService getCvGeneratorDomainService() {
-    return getIt.get<CvGeneratorService>();
+  CvCreatorService getCvCreatorDomainService() {
+    return getIt.get<CvCreatorService>();
   }
 }

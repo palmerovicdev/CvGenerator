@@ -1,6 +1,6 @@
 enum Routes{
-  cvGeneratotPage( name: 'cv_generator', routePath: '/cv_generator' ),
-  configurations( name: 'configurations', routePath: '/configurations' );
+  configurations( name: 'configurations', routePath: '/configurations' ),
+  cvCreatorPage( name: 'cv_creator', routePath: '/cv_creator' );
 
   final String routePath;
   final String name;
